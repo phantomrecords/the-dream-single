@@ -8,84 +8,35 @@
     html, body {
       margin: 0;
       padding: 0;
-      width: 50%;
-      height: 50%;
-      background: url('Dream-singles.us-Dating-Site-Project.png') no-repeat center center;
-      background-size: cover;
-      font-family: Arial, sans-serif;
-    }
-
-    .overlay {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
       width: 100%;
       height: 100%;
-      background: rgba(255, 255, 255, 0); /* Transparent overlay if needed */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #28527b; /* background color behind image */
     }
 
-    .container {
-      width: 350px;
-      background: rgba(255, 255, 255, 0.8);
-      padding: 20px;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-      text-align: center;
-    }
-
-    input, select, button {
+    img {
       width: 100%;
-      margin: 8px 0;
-      padding: 10px;
-      font-size: 16px;
-      border: 1px solid #ccc;
-      border-radius: 4px;
+      height: auto;
+      max-width: 1200px; /* maximum width on large screens */
+      object-fit: contain; /* ensure the entire image is visible */
     }
 
-    button {
-      background-color: #0033cc;
-      color: white;
-      border: none;
-      cursor: pointer;
+    @media (max-width: 768px) {
+      img {
+        max-width: 95%; /* shrink more on tablets/phones */
+      }
     }
 
-    button:hover {
-      background-color: #002699;
-    }
-
-    .footer-links {
-      margin-top: 10px;
-      font-size: 14px;
-    }
-
-    .footer-links a {
-      color: #0033cc;
-      text-decoration: none;
+    @media (max-width: 480px) {
+      img {
+        max-width: 90%; /* further shrink on smaller screens */
+      }
     }
   </style>
 </head>
 <body>
-  <!--
-  <div class="overlay">
-    <div class="container">
-      <select>
-        <option>I'm a Man Seeking a Woman</option>
-        <option>I'm a Woman Seeking a Man</option>
-      </select>
-      <input type="email" placeholder="Email">
-      <input type="password" placeholder="Password">
-      <input type="text" placeholder="Birthday: MM/DD/YYYY">
-      <input type="text" placeholder="Country">
-      <label><input type="checkbox"> I agree to the <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a></label>
-      <button>FIND MY MATCH</button>
-      <p>or</p>
-      <button>Sign In with Google</button>
-      <div class="footer-links">
-        <p>Already have an account? <a href="#">Sign in</a></p>
-      </div>
-    </div>
-  </div>
-  -->
+  <img src="Dream-singles.us-Dating-Site-Project.png" alt="Landing Page Image">
 </body>
 </html>
