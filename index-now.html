@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dream Singles Landing Page</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      background: url('Dream-singles.us-Dating-Site-Project.png') no-repeat center center;
+      background-size: cover;
+      font-family: Arial, sans-serif;
+    }
+
+    .overlay {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+      background: rgba(255, 255, 255, 0); /* Transparent overlay if needed */
+    }
+
+    .container {
+      width: 350px;
+      background: rgba(255, 255, 255, 0.8);
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      text-align: center;
+    }
+
+    input, select, button {
+      width: 100%;
+      margin: 8px 0;
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    button {
+      background-color: #0033cc;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #002699;
+    }
+
+    .footer-links {
+      margin-top: 10px;
+      font-size: 14px;
+    }
+
+    .footer-links a {
+      color: #0033cc;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay">
+    <div class="container">
+      <select>
+        <option>I'm a Man Seeking a Woman</option>
+        <option>I'm a Woman Seeking a Man</option>
+      </select>
+      <input type="email" placeholder="Email">
+      <input type="password" placeholder="Password">
+      <input type="text" placeholder="Birthday: MM/DD/YYYY">
+      <input type="text" placeholder="Country">
+      <label><input type="checkbox"> I agree to the <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a></label>
+      <button>FIND MY MATCH</button>
+      <p>or</p>
+      <button>Sign In with Google</button>
+      <div class="footer-links">
+        <p>Already have an account? <a href="#">Sign in</a></p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
